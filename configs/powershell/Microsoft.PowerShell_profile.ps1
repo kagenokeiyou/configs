@@ -8,14 +8,14 @@ Invoke-Expression (& starship init powershell)
 Set-Alias -Name ls -Value lsd -Force
 
 function la {
-    & lsd -a
+    & lsd -a @args
 }
 
 function ll {
-    & lsd -al
+    & lsd -al @args
 }
 
 function lt {
-    & lsd --tree
+    & lsd --tree @args
 }
 #endregion
