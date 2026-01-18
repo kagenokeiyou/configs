@@ -32,7 +32,7 @@ alias ll='ls -lhAF'
 # alias ls='lsd'
 # alias la='lsd -a'
 # alias ll='lsd -al'
-# alias lt='lsd --tree -a'
+# alias lt='lsd --tree'
 
 alias rm='rm -i'
 alias cp='cp -i'
