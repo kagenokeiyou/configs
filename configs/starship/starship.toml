@@ -76,4 +76,5 @@ format = '[\[$symbol $environment\]]($style) '
 symbol = "Conda"
 style = "bold green"
 truncation_length = 1
+ignore_base = false
 disabled = false
