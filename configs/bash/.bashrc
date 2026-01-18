@@ -7,8 +7,8 @@ export LANG=C.UTF-8
 export EDITOR=vim
 export VISUAL=vim
 export HISTCONTROL=ignoreboth
-export HISTSIZE=5000
-export HISTFILESIZE=10000
+export HISTSIZE=10000
+export HISTFILESIZE=20000
 
 shopt -s histappend
 shopt -s checkwinsize
