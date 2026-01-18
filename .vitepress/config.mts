@@ -1,6 +1,6 @@
 import { defineConfig } from 'vitepress'
 
-const base = '/config/'
+const base = '/configs/'
 
 export default defineConfig({
   title: 'Configs',
