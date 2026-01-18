@@ -1,0 +1,79 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+format = """$username\
+$directory\
+$git_branch\
+$git_commit\
+$python\
+$conda\
+$cmd_duration
+$character"""
+add_newline = true
+
+[username]
+format = "[$user]($style) "
+style_root = "bold red"
+style_user = "bold green"
+show_always = true
+disabled = false
+
+[character]
+format = "$symbol "
+success_symbol = "[🤣👉](yellow)"
+error_symbol = "[😡👉](red)"
+vimcmd_symbol = "[🤓👆](yellow)"
+vimcmd_replace_one_symbol = "[✏️👆](purple)"
+vimcmd_replace_symbol = "[✏️👆](purple)"
+vimcmd_visual_symbol = "[👀👆](yellow)"
+disabled = false
+
+[directory]
+format = "[$path]($style)[$read_only]($read_only_style) "
+repo_root_format = "[$before_root_path]($before_repo_root_style)[$repo_root]($repo_root_style)[$path]($style)[$read_only]($read_only_style) "
+style = "bold cyan"
+read_only = "🔒"
+read_only_style = "yellow"
+before_repo_root_style = "bold cyan"
+repo_root_style = "bold cyan"
+truncation_symbol = "…"
+truncation_length = 8
+truncate_to_repo = true
+home_symbol = "~"
+use_os_path_sep = true
+disabled = false
+
+[git_branch]
+format = '[$symbol$branch\($remote_name:$remote_branch\)]($style) '
+symbol = ""
+style = "bold purple"
+always_show_remote = true
+truncation_symbol = "…"
+truncation_length = 16
+only_attached = true
+disabled = false
+
+[git_commit]
+format = "[$hash]($style) "
+style = "bold purple"
+commit_hash_length = 8
+only_detached = false
+disabled = false
+
+[cmd_duration]
+format = "[$duration]($style) "
+style = "bold yellow"
+min_time = 3000
+disabled = false
+
+[python]
+format = '[\[$symbol $version\]]($style) '
+symbol = "Py"
+style = "bold yellow"
+disabled = false
+
+[conda]
+format = '[\[$symbol $environment\]]($style) '
+symbol = "Conda"
+style = "bold green"
+truncation_length = 1
+disabled = false

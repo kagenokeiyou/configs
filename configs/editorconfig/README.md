@@ -1,0 +1,5 @@
+# Editorconfig
+
+## `.editorconfig`
+
+<<< @/.editorconfig{ini}
